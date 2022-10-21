@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PoiPet Shop</title>
+        <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +16,20 @@
 <body>
 <section class="header">
     <nav>
-        <a href="index.html"><img src="images/logo.png" width="100px" height="100px"></a>
+        <a href="index.html"><img src="images/logo.png"></a>
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
 
                 <!--DropDown-->
                 <div class="dropdown">
-                    <li><a href="">SHOP</a></li>
+                    <li><a href="all_products.html">SHOP</a></li>
                     <div class="dropdown-content" style="left: 0; text-align: left;">
-                      <a href="#">Male</a>
-                      <a href="#">Female</a>
-                      <a href="#">Kid</a>
+                        <a href="male_products.html">Male</a>
+                        <a href="female_products.html">Female</a>
+                        <a href="kid_products.html">Kid</a>
                     </div>
                 </div>
 
@@ -44,7 +45,7 @@
     <p>Give Away, Free Shipping and many more. It is a long established fact that a reader will be distracted<br>
          by the readable content of a page when looking at its layout.
     </p>
-    <a href="" class="hero-btn">GO!</a>
+    <a href="all_products.html" class="hero-btn">GO!</a>
 </div> 
 
 </section>
@@ -94,25 +95,84 @@
         <div class="type-col">
             <img src="images/shoes1.jpg">
             <div class="layer">
-                <h3>Male</h3>
+                <a href="male_products.html"><h3>Male</h3></a>
             </div>
         </div>
         <div class="type-col">
             <img src="images/shoes2.png">
             <div class="layer">
-                <h3>Female</h3>
+                <a href="female_products.html"><h3>Female</h3></a>
             </div>
         </div>
         <div class="type-col">
             <img src="images/shoes3.png">
             <div class="layer">
-                <h3>Kid</h3>
+                <a href="kid_products.html"><h3>Kid</h3></a>
             </div>
         </div>
     </div>
 </section>
 
-<!-------popular------->
+<!-------featured products------->
+
+<div class="small-container">
+    <br>
+    <br>
+    <br>
+    <h2 class="title" style="color: black;">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/Featured products/fp1.png">
+            <h4>U.S. Polo Assn. Men</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$299.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/Featured products/fp2.png">
+            <h4>Button Shoes Summer-800x</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$189.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/Featured products/fp3.jpg">
+            <h4>SKX49432 Kids</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$79.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/Featured products/fp4.jpg">
+            <h4>Nikee Force-1</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$199.00</p>
+        </div>
+    </div>
+</div>
+
+<!-------popular
 
 <section class="popular">
     <h1><i class="fa fa-star"></i> Popular <i class="fa fa-star"></i></h1>
@@ -140,6 +200,7 @@
     </div>
 
 </section>
+------->
 
 <!-------celebrity------->
 
@@ -184,8 +245,9 @@
 <!-------Call To Action------->
 
 <section class="cta">
-    <h1>PoiPet, The Innovation of Hell walking</h1>
-    <a href="" class="hero-btn">Get One!</a>
+    <h1><img src="images/logo.png" style="height: 150px; width:300px"></h1>
+    <h1>The Innovation of Hell walking</h1>
+    <a href="all_products.html" class="hero-btn">Get One!</a>
 </section>
 
 <!-------Footer------->
