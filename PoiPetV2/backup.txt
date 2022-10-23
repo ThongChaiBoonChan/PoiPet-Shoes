@@ -1,0 +1,60 @@
+<?php   
+session_start();
+
+    //include('connection.php');
+    include('functions.php');
+
+    require_once "connection.php";
+
+    //$user_data = check_login($con);
+
+    //if($_SERVER['REQUEST_METHOD'] == "POST")
+    if(isset($_POST['sigup']))
+    {
+        //something was posted
+        //$user_id = random_num(20);
+
+        $user_name = $_POST['signup_email'];
+        $password = $_POST['signup_pswd'];
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $bdate = $_POST['bdate'];
+        $address = $_POST['address'];
+        $tel = $_POST['tel'];
+
+        $user_check = "SELECT * FROM tb_customer WHERE cus_email = '$user_name' LIMIT 1";
+        $resualt = mysqli_query($conn, $user_check);
+        $user = mysqli_fetch_assoc($resualt);
+
+    $sql = "INSERT INTO tb_customer (cus_Fname,cus_Lname,cus_address,cus_tel,cus_email,cus_password) VALUES ('xxx','xx','xxs','xxx','xxxx','xxx')";
+
+if ($conn->query($sql) === TRUE) {
+    $last_id =$conn->insert_id; //รายการที่เพิ่มเข้าไป
+echo "New record created successfully. Last insert ID is: ".$last_id;
+} else {
+echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+
+
+        
+
+        if($user['cuse_email'] === $user_name){
+            echo "<script>alert('Username already exits');<script>";
+        }else{
+            $passwordenc = md5($password);
+
+            $query = "INSERT INTO tb_customer (cus_Fname,cus_Lname,cus_address,cus_tel,cus_email,cus_password) VALUES ('$fname','$lname','$address','$tel','$user_name','$passwordenc')";
+
+            $resualt = mysqli_query($conn, $query);
+
+            if($resualt){
+                $_SESSION['success'] = "Insert user succcessfuly";
+                header("Location: index.php");
+            }else{
+                $_SESSION['error'] = "Something went wrong";
+                header("Location: index.php");
+            }
+        }
+    }
+?>
