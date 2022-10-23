@@ -11,11 +11,15 @@
 
     //insert
     $sql = "INSERT INTO tb_customer (cus_Fname,cus_Lname,cus_address,cus_tel,cus_email,cus_password)
-     VALUES ('$fname','$lname','$address','$tel','$suemail','$supswd')";
+     VALUES ('Thongchai','Boonchan','Bangkok','0933675859','thongchai@gmail.com','1234567')";
 
-    $resualt = mysqli_query($conn,$sql);
+    //$sql = "INSERT INTO tb_customer (cus_Fname) VALUES ('Gun')";
 
-    if($resualt){
+    $result = mysqli_query($conn, $sql);
+
+    //$result = mysqli_query($conn,$sql);
+
+    if($result){
         echo "<script> alert('signup success'); <script> ";
         echo "<script> window.location='index.php'; <script> ";
     }else{

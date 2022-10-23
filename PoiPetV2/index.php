@@ -1,10 +1,18 @@
-<?php   
+<?php
+
+@include 'connection.php';
+
 session_start();
 
-    include('connection.php');
-    include('functions.php');
+if(!isset($_SESSION['user_name'])){
+    $acc_txt = 'ACCOUNT';
+    $log_txt = 'LOGIN';
+}else{
+    $acc_txt = $_SESSION['user_name'];
+    $log_txt = 'LOGOUT';
+}
 
-    $user_data = check_login($con);
+
 ?>
 
 <!DOCTYPE html>
@@ -25,25 +33,33 @@ session_start();
 <body>
 <section class="header">
     <nav>
-        <a href="index.html"><img src="images/logo.png"></a>
+        <a href="index.php"><img src="images/logo.png"></a>
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="#about_us">ABOUT</a></li>
 
                 <!--DropDown-->
                 <div class="dropdown">
-                    <li><a href="all_products.html">SHOP</a></li>
+                    <li><a href="all_products.php">SHOP</a></li>
                     <div class="dropdown-content" style="left: 0; text-align: left;">
-                        <a href="male_products.html">Male</a>
-                        <a href="female_products.html">Female</a>
-                        <a href="kid_products.html">Kid</a>
+                        <a href="male_products.php">Male</a>
+                        <a href="female_products.php">Female</a>
+                        <a href="kid_products.php">Kid</a>
                     </div>
                 </div>
 
-                <li><a href="">CONTACT</a></li>
-                <li><a href="login.php">LOGIN <i class="fa fa-sign-in" style="display: inline-flex;"></i></a></li>
+                <li><a href="#contact">CONTACT</a></li>
+
+                <!--DropDown-->
+                <div class="dropdown">
+                    <li><a href="" style="font-weight: bold;"><?php echo strtoupper($acc_txt) ?></a></li>
+                    <div class="dropdown-content" style="left: 0; text-align: left;">
+                        <a href="logout.php" style="font-size: 13px;"><?php echo $log_txt ?> <i class="fa fa-sign-in" style="display: inline-flex;"></i></a>
+                    </div>
+                </div>
+                
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -54,72 +70,9 @@ session_start();
     <p>Give Away, Free Shipping and many more. It is a long established fact that a reader will be distracted<br>
          by the readable content of a page when looking at its layout.
     </p>
-    <a href="all_products.html" class="hero-btn">GO!</a>
+    <a href="all_products.php" class="hero-btn">GO!</a>
 </div> 
 
-</section>
-
-<!-------Shoes--------->
-
-<section class="shoes">
-    <h1>Our Product</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-    <div class="row">
-        <div class="shoes-col">
-            <h3>Mirror 100%</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Facilis delectus expedita placeat, totam iure enim 
-                quibusdam iusto id, eius distinctio, repudiandae sequi 
-                deleniti facere cumque debitis tempora reiciendis! 
-                Debitis, rerum.</p>
-        </div>
-        <div class="shoes-col">
-            <h3>Factory New</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Facilis delectus expedita placeat, totam iure enim 
-                quibusdam iusto id, eius distinctio, repudiandae sequi 
-                deleniti facere cumque debitis tempora reiciendis! 
-                Debitis, rerum.</p>
-        </div>
-        <div class="shoes-col">
-            <h3>PoiPet Style</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Facilis delectus expedita placeat, totam iure enim 
-                quibusdam iusto id, eius distinctio, repudiandae sequi 
-                deleniti facere cumque debitis tempora reiciendis! 
-                Debitis, rerum.</p>
-        </div>
-    </div>
-
-</section>
-
-<!-------type------->
-
-<section class="type">
-    <h1>For All</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    <div class="row">
-        <div class="type-col">
-            <img src="images/shoes1.jpg">
-            <div class="layer">
-                <a href="male_products.html"><h3>Male</h3></a>
-            </div>
-        </div>
-        <div class="type-col">
-            <img src="images/shoes2.png">
-            <div class="layer">
-                <a href="female_products.html"><h3>Female</h3></a>
-            </div>
-        </div>
-        <div class="type-col">
-            <img src="images/shoes3.png">
-            <div class="layer">
-                <a href="kid_products.html"><h3>Kid</h3></a>
-            </div>
-        </div>
-    </div>
 </section>
 
 <!-------featured products------->
@@ -180,6 +133,70 @@ session_start();
         </div>
     </div>
 </div>
+
+<!-------type------->
+
+<section class="type">
+    <h1>For All</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <div class="row">
+        <div class="type-col">
+            <img src="images/shoes1.jpg">
+            <div class="layer">
+                <a href="male_products.php"><h3>Male</h3></a>
+            </div>
+        </div>
+        <div class="type-col">
+            <img src="images/shoes2.png">
+            <div class="layer">
+                <a href="female_products.php"><h3>Female</h3></a>
+            </div>
+        </div>
+        <div class="type-col">
+            <img src="images/shoes3.png">
+            <div class="layer">
+                <a href="kid_products.php"><h3>Kid</h3></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-------Shoes--------->
+
+<section class="shoes">
+    <h1 id= "about_us">Our Brand</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="shoes-col">
+            <h3>Mirror 100%</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Facilis delectus expedita placeat, totam iure enim 
+                quibusdam iusto id, eius distinctio, repudiandae sequi 
+                deleniti facere cumque debitis tempora reiciendis! 
+                Debitis, rerum.</p>
+        </div>
+        <div class="shoes-col">
+            <h3>Factory New</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Facilis delectus expedita placeat, totam iure enim 
+                quibusdam iusto id, eius distinctio, repudiandae sequi 
+                deleniti facere cumque debitis tempora reiciendis! 
+                Debitis, rerum.</p>
+        </div>
+        <div class="shoes-col">
+            <h3>PoiPet Style</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Facilis delectus expedita placeat, totam iure enim 
+                quibusdam iusto id, eius distinctio, repudiandae sequi 
+                deleniti facere cumque debitis tempora reiciendis! 
+                Debitis, rerum.</p>
+        </div>
+    </div>
+
+</section>
 
 <!-------popular
 
@@ -256,13 +273,13 @@ session_start();
 <section class="cta">
     <h1><img src="images/logo.png" style="height: 150px; width:300px"></h1>
     <h1>The Innovation of Hell walking</h1>
-    <a href="all_products.html" class="hero-btn">Get One!</a>
+    <a href="all_products.php" class="hero-btn">Get One!</a>
 </section>
 
 <!-------Footer------->
 
 <section class="footer">
-    <h4>About Us</h4>
+    <h4 id="contact">Contact Us</h4>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         Sunt ipsam enim saepe incidunt fugiat illo.<br> quis minima 
         accusamus architecto a labore illum aliquid nobis officiis

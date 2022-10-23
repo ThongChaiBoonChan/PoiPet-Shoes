@@ -1,10 +1,27 @@
+<?php
+
+@include 'connection.php';
+
+session_start();
+
+if(!isset($_SESSION['user_name'])){
+    $acc_txt = 'ACCOUNT';
+    $log_txt = 'LOGIN';
+}else{
+    $acc_txt = $_SESSION['user_name'];
+    $log_txt = 'LOGOUT';
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kid Products - PoiPet Shop</title>
+    <title>Male Products - PoiPet Shop</title>
         <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,25 +33,31 @@
 <body>
 <section class="header" style="min-height: 10vh;;">
     <nav>
-        <a href="index.html"><img src="images/logo.png" width="100px" height="100px"></a>
+        <a href="index.php"><img src="images/logo.png" width="100px" height="100px"></a>
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="index.php #about_us">ABOUT</a></li>
 
                 <!--DropDown-->
                 <div class="dropdown">
-                    <li><a href="all_products.html">SHOP</a></li>
+                    <li><a href="all_products.php">SHOP</a></li>
                     <div class="dropdown-content" style="left: 0; text-align: left;">
-                        <a href="male_products.html">Male</a>
-                        <a href="female_products.html">Female</a>
-                        <a href="kid_products.html">Kid</a>
+                        <a href="male_products.php">Male</a>
+                        <a href="female_products.php">Female</a>
+                        <a href="kid_products.php">Kid</a>
                     </div>
                 </div>
 
-                <li><a href="">CONTACT</a></li>
-                <li><a href="">LOGIN <i class="fa fa-sign-in" style="display: inline-flex;"></i></a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <!--DropDown-->
+                <div class="dropdown">
+                    <li><a href="" style="font-weight: bold;"><?php echo strtoupper($acc_txt) ?></a></li>
+                    <div class="dropdown-content" style="left: 0; text-align: left;">
+                        <a href="logout.php" style="font-size: 13px;"><?php echo $log_txt ?> <i class="fa fa-sign-in" style="display: inline-flex;"></i></a>
+                    </div>
+                </div>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -45,7 +68,7 @@
 <div class="small-container">
 
     <div class="row roe-2">
-        <h2>Kid Products</h2>
+        <h2>Male Products</h2>
         <select>
             <option>Defualt Sorting</option>
             <option>Sort by price</option>
@@ -221,7 +244,7 @@
 <!-------Footer------->
 
 <section class="footer">
-    <h4>About Us</h4>
+    <h4 id="contact">Contact Us</h4>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         Sunt ipsam enim saepe incidunt fugiat illo.<br> quis minima 
         accusamus architecto a labore illum aliquid nobis officiis
