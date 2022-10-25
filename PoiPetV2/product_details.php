@@ -66,66 +66,57 @@ if(!isset($_SESSION['user_name'])){
     </nav>
 </section>
 
+<!---single Product details--->
+
+<div class="small-container single-product">
+    <div class="row sp_row">
+        <div class="col-2">
+            <img src="images/Product/01test/fp1.png" width="100%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/Product/01test/fp1.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Product/01test/fp2.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Product/01test/fp3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Product/01test/fp4.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <h1>T-Shirt by Enjoy Dude</h1>
+            <h4>$29.99</h4>
+
+            <input type="number" value="1" min="1">
+            <a href="" class="btn">Add to Cart</a>
+            <h3>Product Details<i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Architecto aliquam nisi commodi, dolorem delectus dolores ea
+                  quod ipsa alias, accusantium sunt sed adipisci odit velit
+                   aspernatur. Asperiores at velit voluptatibus?
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!----Relate product---->
+
+<div class="small-container">
+    <div class="row">
+        <h2>Related Peoducts</h2>
+        <p>View more</p>
+    </div>
+</div>
 
 <div class="small-container">
 
-    <div class="row roe-2">
-        <h2>All Products</h2>
-    </div>
-
-<!---แถว1--->
-    <div class="row" style="margin-bottom: -100px;">
-        <div class="col-4">
-            <img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES1.jpg">
-            <h4>SUPERSTAR SHOES</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$199.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>$189.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$79.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>$199.00</p>
-        </div>
-    </div>
-<!---แถว2--->
-    <div class="row" style="margin-bottom: -100px;">
+    <div class="row " style="margin-bottom: -100px;">
         <div class="col-4">
             <img src="images/Featured products/fp1.png">
             <h4>U.S. Polo Assn. Men</h4>
@@ -174,63 +165,6 @@ if(!isset($_SESSION['user_name'])){
             </div>
             <p>$199.00</p>
         </div>
-    </div>
-<!---แถว3--->
-    <div class="row" style="margin-bottom: -10px;">
-        <div class="col-4">
-            <img src="images/Featured products/fp1.png">
-            <h4>U.S. Polo Assn. Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$299.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>$189.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$79.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>$199.00</p>
-        </div>
-    </div>
-    
-    <div class="page-btn">
-        <a href="all_products.php"><span>1</span></a>
-        <a href="all_products2.php"><span>2</span></a>
-        <a href="all_products2.php"><span>&#8594;</span></a>
     </div>
     
 </div>
@@ -263,6 +197,24 @@ if(!isset($_SESSION['user_name'])){
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
+
+
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+
 
 </script>
 
