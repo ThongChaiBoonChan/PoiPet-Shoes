@@ -1,20 +1,3 @@
-<?php
-
-@include 'connection.php';
-
-session_start();
-
-if(!isset($_SESSION['user_name'])){
-    $acc_txt = 'ACCOUNT';
-    $log_txt = 'LOGIN';
-}else{
-    $acc_txt = $_SESSION['user_name'];
-    $log_txt = 'LOGOUT';
-}
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,7 +83,7 @@ if(!isset($_SESSION['user_name'])){
             <p>$159.00</p>
         </div>
         <div class="col-4">
-            <img src="images/kid/01 ADVANTAGE SHOES 1/ADVANTAGE SHOES 1.jpg">
+            <img src="images/kid/01 ADVANTAGE SHOES/ADVANTAGE SHOES 1.jpg">
             <h4>ADVANTAGE SHOES </h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
@@ -112,7 +95,7 @@ if(!isset($_SESSION['user_name'])){
             <p>$69.00</p>
         </div>
         <div class="col-4">
-            <img src="images/male/02SAMBA JUVENTUS1/SAMBA JUVENTUS1.png">
+            <img src="images/male/02SAMBA JUVENTUS/SAMBA JUVENTUS1.png">
             <h4>SAMBA JUVENTUS1</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
@@ -178,7 +161,7 @@ if(!isset($_SESSION['user_name'])){
 <!---แถว3--->
     <div class="row" style="margin-bottom: -10px;">
         <div class="col-4">
-            <img src="images/kid/03 NY 90 SHOES 3/NY 90 SHOES 3.jpg">
+            <img src="images/kid/03 NY 90 SHOES/NY 90 SHOES 3.jpg">
             <h4>NY 90 SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>

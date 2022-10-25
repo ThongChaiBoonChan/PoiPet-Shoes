@@ -1,20 +1,3 @@
-<?php
-
-@include 'connection.php';
-
-session_start();
-
-if(!isset($_SESSION['user_name'])){
-    $acc_txt = 'ACCOUNT';
-    $log_txt = 'LOGIN';
-}else{
-    $acc_txt = $_SESSION['user_name'];
-    $log_txt = 'LOGOUT';
-}
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,7 +69,7 @@ if(!isset($_SESSION['user_name'])){
             <p>$299.00</p>
         </div>
         <div class="col-4">
-            <img src="images/kid/05 ADIDAS X DISNEY MICKEY MOUSE ALTASWIM SANDALS/ADIDAS X DISNEY MICKEY MOUSE ALTASWIM SANDALS 3.jpg">
+            <img src="images/kid/05 ADIDAS X DISNEY MICKEY MOUSE ALTASWIM SANDALS/ADIDAS X DISNEY MICKEY MOUSE ALTASWIM SANDALS 3.png">
             <h4>Button Shoes Summer-800x</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
@@ -98,8 +81,8 @@ if(!isset($_SESSION['user_name'])){
             <p>$89.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
+            <img src="images/female/06 Nike Air Force 1 Shadow/Nike Air Force 1 Shadow 1.png">
+            <h4>Nike Air Force 1 Shadow</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -107,11 +90,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$79.00</p>
+            <p>$109.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
+            <img src="images/kid/06 Nike Force 1 Premium/Nike Force 1 Premium 1.png">
+            <h4>Nikee Force 1</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -119,7 +102,7 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$199.00</p>
+            <p>$99.00</p>
         </div>
     </div>
     
