@@ -21,7 +21,7 @@ if(!isset($_SESSION['user_name'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products - PoiPet Shop</title>
+    <title>ADVANTAGE SHOES - PoiPet Shop</title>
         <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,6 +60,8 @@ if(!isset($_SESSION['user_name'])){
                     </div>
                 </div>
 
+                <li><a href="cart.php"><i class="fa fa-shopping-cart" style="display: block; color: #fff; margin: 10px; font-size: 22px; cursor: pointer;"></i></a></li>
+
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -71,34 +73,31 @@ if(!isset($_SESSION['user_name'])){
 <div class="small-container single-product">
     <div class="row sp_row">
         <div class="col-2">
-            <img src="images/Product/01test/fp1.png" width="100%" id="ProductImg">
+            <img src="images/kid/01 ADVANTAGE SHOES/ADVANTAGE SHOES 1.jpg" width="100%" id="ProductImg">
             <div class="small-img-row">
                 <div class="small-img-col">
-                    <img src="images/Product/01test/fp1.png" width="100%" class="small-img">
+                    <img src="images/kid/01 ADVANTAGE SHOES/ADVANTAGE SHOES 1.jpg" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="images/Product/01test/fp2.png" width="100%" class="small-img">
+                    <img src="images/kid/01 ADVANTAGE SHOES/ADVANTAGE SHOES 2.jpg" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="images/Product/01test/fp3.jpg" width="100%" class="small-img">
+                    <img src="images/kid/01 ADVANTAGE SHOES/ADVANTAGE SHOES 3.jpg" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="images/Product/01test/fp4.jpg" width="100%" class="small-img">
+                    <img src="images/kid/01 ADVANTAGE SHOES/ADVANTAGE SHOES 4.jpg" width="100%" class="small-img">
                 </div>
             </div>
         </div>
         <div class="col-2">
-            <h1>T-Shirt by Enjoy Dude</h1>
-            <h4>$29.99</h4>
+            <h1>ADVANTAGE SHOES</h1>
+            <h4>$69.00</h4>
 
             <input type="number" value="1" min="1">
             <a href="" class="btn">Add to Cart</a>
             <h3>Product Details<i class="fa fa-indent"></i></h3>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Architecto aliquam nisi commodi, dolorem delectus dolores ea
-                  quod ipsa alias, accusantium sunt sed adipisci odit velit
-                   aspernatur. Asperiores at velit voluptatibus?
+            <p>COMFORTABLE SHOES TO SUPPORT THEIR ADVENTURES.<br>Comfort off the court. These kids' tennis-inspired shoes have a smooth leather-like upper with perforated 3-Stripes. A plush sockliner cushions their every step.
             </p>
 
         </div>
@@ -116,54 +115,54 @@ if(!isset($_SESSION['user_name'])){
 
 <div class="small-container">
 
-    <div class="row " style="margin-bottom: -100px;">
+    <div class="row">
         <div class="col-4">
-            <img src="images/Featured products/fp1.png">
-            <h4>U.S. Polo Assn. Men</h4>
+            <a  href="dt_product1.php"><img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES1.jpg"></a>
+            <h4>SUPERSTAR SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
-            </div>
-            <p>$299.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>$189.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$79.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
             </div>
             <p>$199.00</p>
+        </div>
+        <div class="col-4">
+        <a  href="dt_product2.php"><img src="images/male/02SAMBA JUVENTUS/SAMBA JUVENTUS1.png"></a>
+            <h4>SAMBA JUVENTUS1</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$129.00</p>
+        </div>
+        <div class="col-4">
+        <a  href="dt_product3.php"><img src="images/male/03ULTRABOOST 22 SHOES/ULTRABOOST 22 SHOES4 2.png"></a>
+        <h4>ULTRABOOST 22 SHOES</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$179.00</p>
+        </div>
+        <div class="col-4">
+        <a  href="dt_product4.php"><img src="images/kid/01 ADVANTAGE SHOES/ADVANTAGE SHOES 1.jpg"></a>
+            <h4>ADVANTAGE SHOES </h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$69.00</p>
         </div>
     </div>
     
@@ -173,10 +172,10 @@ if(!isset($_SESSION['user_name'])){
 
 <section class="footer">
     <h4 id="contact">Contact Us</h4>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sunt ipsam enim saepe incidunt fugiat illo.<br> quis minima 
-        accusamus architecto a labore illum aliquid nobis officiis
-        expedita, est fuga animi assumenda?</p>
+    <p>Address: Plot No.8, Salt Lake Bypass, LB Block, Sector III, Salt Lake City, Kolkata, West Bengal, India
+        <br>E-mail: thongchaiboonchan@poipet.com
+        <br>Tel: 033 2335 5215
+        <br>เว็บไซต์นี้เป็นส่วนหนึ่งของรายวิชาการเขียนโปรแกรมบนเว็บ 4122306 ภาคเรียนที่ 1 ปีการศึกษา 2565</p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-instagram"></i>

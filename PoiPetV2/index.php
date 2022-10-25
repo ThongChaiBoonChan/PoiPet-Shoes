@@ -59,6 +59,8 @@ if(!isset($_SESSION['user_name'])){
                         <a href="logout.php" style="font-size: 13px;"><?php echo $log_txt ?> <i class="fa fa-sign-in" style="display: inline-flex;"></i></a>
                     </div>
                 </div>
+
+                <li><a href="cart.php"><i class="fa fa-shopping-cart" style="display: block; color: #fff; margin: 10px; font-size: 22px; cursor: pointer;"></i></a></li>
                 
             </ul>
         </div>
@@ -66,9 +68,9 @@ if(!isset($_SESSION['user_name'])){
     </nav>
     
 <div class="text-box">
-    <h1>Flood Day Sales 80%</h1>
-    <p>Give Away, Free Shipping and many more. It is a long established fact that a reader will be distracted<br>
-         by the readable content of a page when looking at its layout.
+    <h1>Flood Day Sales 80%<i class="fa fa-ship" aria-hidden="true"></i></h1>
+    <p>Give Away, Free Shipping and many more. 
+        <br>Reduced prices for floods Income minus expenses is not donated to anyone:)
     </p>
     <a href="all_products.php" class="hero-btn">GO!</a>
 </div> 
@@ -84,52 +86,52 @@ if(!isset($_SESSION['user_name'])){
     <h2 class="title" style="color: black;">Featured Products</h2>
     <div class="row">
         <div class="col-4">
-            <img src="images/Featured products/fp1.png">
-            <h4>U.S. Polo Assn. Men</h4>
+            <a  href="dt_product1.php"><img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES1.jpg"></a>
+            <h4>SUPERSTAR SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
-            </div>
-            <p>$299.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>$189.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$79.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
             </div>
             <p>$199.00</p>
+        </div>
+        <div class="col-4">
+        <a  href="dt_product2.php"><img src="images/male/02SAMBA JUVENTUS/SAMBA JUVENTUS1.png"></a>
+            <h4>SAMBA JUVENTUS1</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$129.00</p>
+        </div>
+        <div class="col-4">
+        <a  href="dt_product3.php"><img src="images/male/03ULTRABOOST 22 SHOES/ULTRABOOST 22 SHOES4 2.png"></a>
+        <h4>ULTRABOOST 22 SHOES</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$179.00</p>
+        </div>
+        <div class="col-4">
+        <a  href="dt_product4.php"><img src="images/kid/01 ADVANTAGE SHOES/ADVANTAGE SHOES 1.jpg"></a>
+            <h4>ADVANTAGE SHOES </h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$69.00</p>
         </div>
     </div>
 </div>
@@ -138,7 +140,7 @@ if(!isset($_SESSION['user_name'])){
 
 <section class="type">
     <h1>For All</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Our shoes are suitable for all ages.</p>
 
     <div class="row">
         <div class="type-col">
@@ -167,7 +169,7 @@ if(!isset($_SESSION['user_name'])){
 
 <section class="shoes">
     <h1 id= "about_us">Our Brand</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>PoiPet, Innovation of The hell walking.</p>
 
     <div class="row">
         <div class="shoes-col">
@@ -232,16 +234,16 @@ if(!isset($_SESSION['user_name'])){
 
 <section class="celebrity">
     <h1>Celebrity's Rate</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>What's she said about us.</p>
 
     <div class="row">
         <div class="celebrity-col">
             <img src="images/cele1.webp">
             <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                      Suscipit placeat aperiam nihil modi cumque necessitatibus 
                      voluptas eius harum, natus et magnam, ipsa sed ab voluptatum 
-                     dolore vero. Numquam, voluptatum voluptas!</p>
+                     dolore vero. Numquam, voluptatum voluptas!"</p>
                 <h3>Kondern Rav</h3>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -253,10 +255,10 @@ if(!isset($_SESSION['user_name'])){
         <div class="celebrity-col">
             <img src="images/cele2.webp">
             <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                      Suscipit placeat aperiam nihil modi cumque necessitatibus 
                      voluptas eius harum, natus et magnam, ipsa sed ab voluptatum 
-                     dolore vero. Numquam, voluptatum voluptas!</p>
+                     dolore vero. Numquam, voluptatum voluptas!"</p>
                 <h3>Ving Tee</h3>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -280,10 +282,10 @@ if(!isset($_SESSION['user_name'])){
 
 <section class="footer">
     <h4 id="contact">Contact Us</h4>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sunt ipsam enim saepe incidunt fugiat illo.<br> quis minima 
-        accusamus architecto a labore illum aliquid nobis officiis
-        expedita, est fuga animi assumenda?</p>
+    <p>Address: Plot No.8, Salt Lake Bypass, LB Block, Sector III, Salt Lake City, Kolkata, West Bengal, India
+        <br>E-mail: thongchaiboonchan@poipet.com
+        <br>Tel: 033 2335 5215
+        <br>เว็บไซต์นี้เป็นส่วนหนึ่งของรายวิชาการเขียนโปรแกรมบนเว็บ 4122306 ภาคเรียนที่ 1 ปีการศึกษา 2565</p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-instagram"></i>

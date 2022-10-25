@@ -21,7 +21,7 @@ if(!isset($_SESSION['user_name'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products - PoiPet Shop</title>
+    <title>SUPERSTAR SHOES - PoiPet Shop</title>
         <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,16 +68,58 @@ if(!isset($_SESSION['user_name'])){
     </nav>
 </section>
 
+<!---single Product details--->
+
+<div class="small-container single-product">
+    <div class="row sp_row">
+        <div class="col-2">
+            <img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES1.jpg" width="100%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES1.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES2.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES3.png" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES4.png" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <h1>SUPERSTAR SHOES</h1>
+            <h4>$199.00</h4>
+
+            <input type="number" value="1" min="1">
+            <a href="" class="btn">Add to Cart</a>
+            <h3>Product Details<i class="fa fa-indent"></i></h3>
+            <br>
+            <p>THE AUTHENTIC LOW TOP WITH THE SHELL TOE.<br>
+Originally made for basketball courts in the '70s. Celebrated by hip hop royalty in the '80s. The adidas Superstar shoe is now a lifestyle staple for streetwear enthusiasts. The world-famous shell toe feature remains, providing style and protection. Just like it did on the B-ball courts back in the day. Now, whether at a festival or walking in the street you can enjoy yourself without the fear of being stepped on. The serrated 3-Stripes detail and adidas Superstar box logo adds OG authenticity to your look.
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!----Relate product---->
+
+<div class="small-container">
+    <div class="row">
+        <h2>Related Peoducts</h2>
+        <p>View more</p>
+    </div>
+</div>
 
 <div class="small-container">
 
-    <div class="row roe-2">
-        <h2>All Products(2)</h2>
-    </div>
-    <div class="row" style="margin-bottom: -10px;">
+    <div class="row">
         <div class="col-4">
-            <img src="images/male/05OZELLE CLOUDFOAM LIFESTYLE RUNNING SHOES/OZELLE CLOUDFOAM LIFESTYLE RUNNING SHOES 1.jpg">
-            <h4>OZELLE CLOUDFOAM LIFESTYLE RUNNING SHOES</h4>
+            <a  href="dt_product1.php"><img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES1.jpg"></a>
+            <h4>SUPERSTAR SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -85,11 +127,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$299.00</p>
+            <p>$199.00</p>
         </div>
         <div class="col-4">
-            <img src="images/kid/05 ADIDAS X DISNEY MICKEY MOUSE ALTASWIM SANDALS/ADIDAS X DISNEY MICKEY MOUSE ALTASWIM SANDALS 3.png">
-            <h4>Button Shoes Summer-800x</h4>
+        <a  href="dt_product2.php"><img src="images/male/02SAMBA JUVENTUS/SAMBA JUVENTUS1.png"></a>
+            <h4>SAMBA JUVENTUS1</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -97,11 +139,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$89.00</p>
+            <p>$129.00</p>
         </div>
         <div class="col-4">
-            <img src="images/female/06 Nike Air Force 1 Shadow/Nike Air Force 1 Shadow 1.png">
-            <h4>Nike Air Force 1 Shadow</h4>
+        <a  href="dt_product3.php"><img src="images/male/03ULTRABOOST 22 SHOES/ULTRABOOST 22 SHOES4 2.png"></a>
+        <h4>ULTRABOOST 22 SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -109,25 +151,20 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$109.00</p>
+            <p>$179.00</p>
         </div>
         <div class="col-4">
-            <img src="images/kid/06 Nike Force 1 Premium/Nike Force 1 Premium 1.png">
-            <h4>Nikee Force 1</h4>
+        <a  href="dt_product4.php"><img src="images/kid/01 ADVANTAGE SHOES/ADVANTAGE SHOES 1.jpg"></a>
+            <h4>ADVANTAGE SHOES </h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
             </div>
-            <p>$99.00</p>
+            <p>$69.00</p>
         </div>
-    </div>
-    
-    <div class="page-btn">
-        <a href="all_products.php"><span>1</span></a>
-        <a href="all_products2.php"><span>2</span></a>
     </div>
     
 </div>
@@ -160,6 +197,24 @@ if(!isset($_SESSION['user_name'])){
     function hideMenu(){
         navLinks.style.right = "-200px";
     }
+
+
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+
 
 </script>
 

@@ -60,6 +60,8 @@ if(!isset($_SESSION['user_name'])){
                     </div>
                 </div>
 
+                <li><a href="cart.php"><i class="fa fa-shopping-cart" style="display: block; color: #fff; margin: 10px; font-size: 22px; cursor: pointer;"></i></a></li>
+
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -81,47 +83,47 @@ if(!isset($_SESSION['user_name'])){
         <tr>
             <td>
                 <div class="cart-info">
-                    <img src="images/Featured products/fp1.png">
+                <a  href="dt_product1.php"><img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES1.jpg"></a>
                     <div>
-                        <p>Red Printed Tshirt</p>
-                        <small>Price: $50.00</small>
+                        <p>SUPERSTAR SHOES</p>
+                        <small>Price: $199.00</small>
                         <br>
                         <a href="">Remove</a>
                     </div>
                 </div>
             </td>
             <td><input type="number" value="1" min="1"></td>
-            <td>$50.00</td>
+            <td>$199.00</td>
         </tr>
         <tr>
             <td>
                 <div class="cart-info">
-                    <img src="images/Featured products/fp1.png">
+                <a  href="dt_product2.php"><img src="images/male/02SAMBA JUVENTUS/SAMBA JUVENTUS1.png"></a>
                     <div>
-                        <p>Red Printed Tshirt</p>
-                        <small>Price: $50.00</small>
+                        <p>SAMBA JUVENTUS</p>
+                        <small>Price: $129.00</small>
                         <br>
                         <a href="">Remove</a>
                     </div>
                 </div>
             </td>
             <td><input type="number" value="1" min="1"></td>
-            <td>$50.00</td>
+            <td>$129.00</td>
         </tr>
         <tr>
             <td>
                 <div class="cart-info">
-                    <img src="images/Featured products/fp1.png">
+                <a  href="dt_product3.php"><img src="images/male/03ULTRABOOST 22 SHOES/ULTRABOOST 22 SHOES4 2.png"></a>
                     <div>
-                        <p>Red Printed Tshirt</p>
-                        <small>Price: $50.00</small>
+                        <p>ULTRABOOST 22 SHOES</p>
+                        <small>Price: $179.00</small>
                         <br>
                         <a href="">Remove</a>
                     </div>
                 </div>
             </td>
             <td><input type="number" value="1" min="1"></td>
-            <td>$50.00</td>
+            <td>$179.00</td>
         </tr>
     </table>
 
@@ -130,31 +132,33 @@ if(!isset($_SESSION['user_name'])){
         <table>
             <tr>
                 <td>Subtotal</td>
-                <td>$200.00</td>
+                <td>$507.00</td>
             </tr>
             <tr>
                 <td>Tax</td>
-                <td>$200.00</td>
+                <td>$35.49</td>
             </tr>
             <tr>
                 <td>Total</td>
-                <td>$200.00</td>
+                <td>$542.49</td>
             </tr>
         </table>
-
+        
     </div>
-
 </div>
+
+<p style="text-align: right; margin-top: -80px;margin-right:210px"><a href="" class="btn">CHECKOUT</a></p>
+
 
 
 <!-------Footer------->
 
 <section class="footer">
     <h4 id="contact">Contact Us</h4>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sunt ipsam enim saepe incidunt fugiat illo.<br> quis minima 
-        accusamus architecto a labore illum aliquid nobis officiis
-        expedita, est fuga animi assumenda?</p>
+    <p>Address: Plot No.8, Salt Lake Bypass, LB Block, Sector III, Salt Lake City, Kolkata, West Bengal, India
+        <br>E-mail: thongchaiboonchan@poipet.com
+        <br>Tel: 033 2335 5215
+        <br>เว็บไซต์นี้เป็นส่วนหนึ่งของรายวิชาการเขียนโปรแกรมบนเว็บ 4122306 ภาคเรียนที่ 1 ปีการศึกษา 2565</p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-instagram"></i>

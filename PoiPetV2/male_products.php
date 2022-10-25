@@ -58,6 +58,9 @@ if(!isset($_SESSION['user_name'])){
                         <a href="logout.php" style="font-size: 13px;"><?php echo $log_txt ?> <i class="fa fa-sign-in" style="display: inline-flex;"></i></a>
                     </div>
                 </div>
+
+                <li><a href="cart.php"><i class="fa fa-shopping-cart" style="display: block; color: #fff; margin: 10px; font-size: 22px; cursor: pointer;"></i></a></li>
+
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -69,82 +72,24 @@ if(!isset($_SESSION['user_name'])){
 
     <div class="row roe-2">
         <h2>Male Products</h2>
-        <select>
-            <option>Defualt Sorting</option>
-            <option>Sort by price</option>
-            <option>Sort by popularity</option>
-            <option>Sort by rating</option>
-            <option>Sort by sale</option>
-        </select>
     </div>
 
     <div class="row" style="margin-bottom: -100px;">
         <div class="col-4">
-            <img src="images/Featured products/fp1.png">
-            <h4>U.S. Polo Assn. Men</h4>
+        <a  href="dt_product1.php"><img src="images/male/01SUPERSTAR SHOES/SUPERSTAR SHOES1.jpg"></a>
+            <h4>SUPERSTAR SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
-            </div>
-            <p>$299.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>$189.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$79.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
             </div>
             <p>$199.00</p>
         </div>
-    </div>
-
-    <div class="row" style="margin-bottom: -100px;">
         <div class="col-4">
-            <img src="images/Featured products/fp1.png">
-            <h4>U.S. Polo Assn. Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$299.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
+        <a  href="dt_product2.php"><img src="images/male/02SAMBA JUVENTUS/SAMBA JUVENTUS1.png"></a>
+            <h4>SAMBA JUVENTUS</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -152,11 +97,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$189.00</p>
+            <p>$129.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
+        <a  href="dt_product3.php"><img src="images/male/03ULTRABOOST 22 SHOES/ULTRABOOST 22 SHOES4 2.png"></a>
+            <h4>ULTRABOOST 22 SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -164,11 +109,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$79.00</p>
+            <p>$179.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
+        <img src="images/male/04GALAXY 6 SHOES/GALAXY 6 SHOES 3.jpg">
+            <h4>GALAXY 6 SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -176,14 +121,14 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$199.00</p>
+            <p>$119.00</p>
         </div>
     </div>
 
     <div class="row" style="margin-bottom: -10px;">
         <div class="col-4">
-            <img src="images/Featured products/fp1.png">
-            <h4>U.S. Polo Assn. Men</h4>
+        <img src="images/male/05OZELLE CLOUDFOAM LIFESTYLE RUNNING SHOES/OZELLE CLOUDFOAM LIFESTYLE RUNNING SHOES 1.jpg">
+            <h4>OZELLE CLOUDFOAM LIFESTYLE RUNNING SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -194,8 +139,8 @@ if(!isset($_SESSION['user_name'])){
             <p>$299.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
+            <img src="images/male/06Nike Air Max 270/Nike Air Max 270 1.png">
+            <h4>Nike Air Max 270</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -203,40 +148,14 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$189.00</p>
+            <p>$180.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$79.00</p>
+            
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>$199.00</p>
+        
         </div>
-    </div>
-    
-    <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>&#8594;</span>
     </div>
     
 </div>
@@ -245,10 +164,10 @@ if(!isset($_SESSION['user_name'])){
 
 <section class="footer">
     <h4 id="contact">Contact Us</h4>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sunt ipsam enim saepe incidunt fugiat illo.<br> quis minima 
-        accusamus architecto a labore illum aliquid nobis officiis
-        expedita, est fuga animi assumenda?</p>
+    <p>Address: Plot No.8, Salt Lake Bypass, LB Block, Sector III, Salt Lake City, Kolkata, West Bengal, India
+        <br>E-mail: thongchaiboonchan@poipet.com
+        <br>Tel: 033 2335 5215
+        <br>เว็บไซต์นี้เป็นส่วนหนึ่งของรายวิชาการเขียนโปรแกรมบนเว็บ 4122306 ภาคเรียนที่ 1 ปีการศึกษา 2565</p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
             <i class="fa fa-instagram"></i>
