@@ -88,8 +88,8 @@ if(!isset($_SESSION['user_name'])){
             <p>$199.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
+            <img src="images/female/01 ADIDAS STAN SMITH X LEGO® SHOES/ADIDAS STAN SMITH X LEGO® SHOES 1.jpg">
+            <h4>ADIDAS STAN SMITH X LEGO® SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -97,11 +97,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$189.00</p>
+            <p>$159.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
+            <img src="images/kid/01 ADVANTAGE SHOES 1/ADVANTAGE SHOES 1.jpg">
+            <h4>ADVANTAGE SHOES </h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -109,11 +109,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$79.00</p>
+            <p>$69.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
+            <img src="images/male/02SAMBA JUVENTUS1/SAMBA JUVENTUS1.png">
+            <h4>SAMBA JUVENTUS1</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -121,14 +121,14 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$199.00</p>
+            <p>$129.00</p>
         </div>
     </div>
 <!---แถว2--->
     <div class="row" style="margin-bottom: -100px;">
         <div class="col-4">
-            <img src="images/Featured products/fp1.png">
-            <h4>U.S. Polo Assn. Men</h4>
+            <img src="images/female/02 SUPERNOVA SHOES/SUPERNOVA SHOES 3.jpg">
+            <h4>SUPERNOVA SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -136,11 +136,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$299.00</p>
+            <p>$119.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
+            <img src="images/kid/02 DURAMO SL SHOES/DURAMO SL SHOES 1.jpg">
+            <h4>DURAMO SL SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -148,11 +148,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$189.00</p>
+            <p>$80.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
+            <img src="images/male/03ULTRABOOST 22 SHOES/ULTRABOOST 22 SHOES4 2.png">
+            <h4>ULTRABOOST 22 SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -160,11 +160,11 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>$79.00</p>
+            <p>$179.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
+            <img src="images/female/03 ZX 22 BOOST SHOES/ZX 22 BOOST SHOES 2.jpg">
+            <h4>ZX 22 BOOST SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -172,38 +172,14 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$199.00</p>
+            <p>$142.00</p>
         </div>
     </div>
 <!---แถว3--->
     <div class="row" style="margin-bottom: -10px;">
         <div class="col-4">
-            <img src="images/Featured products/fp1.png">
-            <h4>U.S. Polo Assn. Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$299.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp2.png">
-            <h4>Button Shoes Summer-800x</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
-            <p>$189.00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/Featured products/fp3.jpg">
-            <h4>SKX49432 Kids</h4>
+            <img src="images/kid/03 NY 90 SHOES 3/NY 90 SHOES 3.jpg">
+            <h4>NY 90 SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -214,8 +190,8 @@ if(!isset($_SESSION['user_name'])){
             <p>$79.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp4.jpg">
-            <h4>Nikee Force-1</h4>
+            <img src="images/male/04GALAXY 6 SHOES/GALAXY 6 SHOES 3.jpg">
+            <h4>GALAXY 6 SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -223,7 +199,31 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$199.00</p>
+            <p>$119.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/female/04 DURAMO 9 SHOES/DURAMO 9 SHOES 2.jpg">
+            <h4>DURAMO 9 SHOES</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$139.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/kid/04 ADIDAS X LEGO® SPORT PRO SHOES/ADIDAS X LEGO® SPORT PRO SHOES 1.jpg">
+            <h4>ADIDAS X LEGO® SPORT PRO SHOES</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$99.00</p>
         </div>
     </div>
     

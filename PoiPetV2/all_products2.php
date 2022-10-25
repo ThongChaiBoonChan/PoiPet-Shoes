@@ -74,8 +74,8 @@ if(!isset($_SESSION['user_name'])){
     </div>
     <div class="row" style="margin-bottom: -10px;">
         <div class="col-4">
-            <img src="images/Featured products/fp1.png">
-            <h4>U.S. Polo Assn. Men</h4>
+            <img src="images/male/05OZELLE CLOUDFOAM LIFESTYLE RUNNING SHOES/OZELLE CLOUDFOAM LIFESTYLE RUNNING SHOES 1.jpg">
+            <h4>OZELLE CLOUDFOAM LIFESTYLE RUNNING SHOES</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -86,7 +86,7 @@ if(!isset($_SESSION['user_name'])){
             <p>$299.00</p>
         </div>
         <div class="col-4">
-            <img src="images/Featured products/fp2.png">
+            <img src="images/kid/05 ADIDAS X DISNEY MICKEY MOUSE ALTASWIM SANDALS/ADIDAS X DISNEY MICKEY MOUSE ALTASWIM SANDALS 3.jpg">
             <h4>Button Shoes Summer-800x</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
@@ -95,7 +95,7 @@ if(!isset($_SESSION['user_name'])){
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half-o"></i>
             </div>
-            <p>$189.00</p>
+            <p>$89.00</p>
         </div>
         <div class="col-4">
             <img src="images/Featured products/fp3.jpg">
